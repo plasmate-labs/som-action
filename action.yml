@@ -1,0 +1,26 @@
+name: 'Plasmate SOM Fetch'
+description: 'Fetch a web page with Plasmate and output the Semantic Object Model'
+branding:
+  icon: 'globe'
+  color: 'orange'
+inputs:
+  url:
+    description: 'URL to fetch'
+    required: true
+  format:
+    description: 'Output format (json or text)'
+    required: false
+    default: 'json'
+outputs:
+  som:
+    description: 'The SOM output'
+  tokens:
+    description: 'Token count of the SOM'
+  title:
+    description: 'Page title'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.url }}
+    - ${{ inputs.format }}
