@@ -2,7 +2,7 @@
 
 [![GitHub Action](https://img.shields.io/badge/GitHub-Action-blue?style=for-the-badge&logo=github)](https://github.com/marketplace/actions/plasmate-som-fetch)
 
-A GitHub Action that fetches a web page with [Plasmate](https://github.com/nickthecook/plasmate) and outputs the **Semantic Object Model (SOM)**.
+A GitHub Action that fetches a web page with [Plasmate](https://github.com/plasmate-labs/plasmate) and outputs the **Semantic Object Model (SOM)**. SOM uses 4x fewer tokens than raw HTML while preserving page structure, element roles, and interactive affordances.
 
 ## Usage
 
